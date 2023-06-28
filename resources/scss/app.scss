@@ -1,5 +1,5 @@
 /* importo bootstrap dalla cartella node_modules usando l'alias settato in vite.config.js */
-@import "~bootstrap/scss/bootstrap";
+
 
 * {
     margin: 0;
@@ -19,10 +19,116 @@ body {
 header,
 footer {
     width: 100%;
-    background: #EEE;
+    background-color:white;
     color: black;
 }
 
 header img.logo {
     height: 2rem;
+}
+
+a:hover {
+  color: blue;
+  border-bottom: 4px solid blue;
+  transition: border-color 0.3s;
+}
+
+a {
+  color: black;
+
+}
+
+footer {
+    background-image: url("{{ Vite::asset('resources/img/footer-bg.jpg')}}");
+    background-size: cover;
+}
+h4 {
+    color: white;
+}
+
+li {
+    color: gray;
+    list-style-type: none;
+    margin: 3px 0;
+}
+
+ul {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.relative {
+    position: relative;
+}
+
+img {
+    position: absolute;
+    top: -55px;
+}
+
+.z-Index {
+    z-index: 999;
+}
+
+footer section {
+    background-color: #303030;
+}
+
+button {
+    border: 2px solid #1b70ec;
+    color: white;
+    border-radius: 0px;
+}
+
+a {
+    text-decoration:none;
+}
+i {
+    font-size: 30px;
+    color: gray;
+    
+}
+#black {
+    background-color: black;
+    padding: 1.6rem;
+}
+.pend10rem {
+    padding-right: 10rem;
+}
+
+div#jumbo {
+    background-image: url(../../public/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+.widx6 {
+    width: calc(100% / 6);
+}
+img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top ;
+}
+button {
+    width: 300px;
+}
+.btnabsolute {
+    position:absolute;
+    bottom:61%;
+    left: 400px;
+}
+
+p {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+a {
+    color: white;
+    font-size: 24px;
+}
+.relative {
+    position: relative;
 }
